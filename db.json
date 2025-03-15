@@ -1,0 +1,67 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Harry Potter à l'école des sorciers",
+      "original_title": "Harry Potter and the Philosopher's Stone",
+      "authorId": "1",
+      "publication_year": 1997,
+      "summary": "Harry Potter, un jeune sorcier, découvre son héritage magique et commence sa première année à l'école de sorcellerie Poudlard. Il se lie d'amitié avec Ron et Hermione et affronte le sorcier maléfique Voldemort."
+    },
+    {
+      "id": "2",
+      "title": "Harry Potter et la Chambre des secrets",
+      "original_title": "Harry Potter and the Chamber of Secrets",
+      "authorId": "1",
+      "publication_year": 1998,
+      "summary": "Harry Potter retourne à Poudlard pour sa deuxième année. Il découvre la Chambre des secrets, un endroit mystérieux où des élèves sont attaqués par un monstre. Avec l'aide de Ron et Hermione, il résout le mystère."
+    },
+    {
+      "id": "3",
+      "title": "Harry Potter et le Prisonnier d'Azkaban",
+      "original_title": "Harry Potter and the Prisoner of Azkaban",
+      "authorId": "1",
+      "publication_year": 1999,
+      "summary": "Harry Potter entre en troisième année à Poudlard. Il apprend que Sirius Black, un prisonnier évadé d'Azkaban, est à sa recherche. Avec l'aide de Ron et Hermione, il découvre la vérité sur Sirius et son lien avec ses parents."
+    },
+    {
+      "id": "4",
+      "title": "Harry Potter et la Coupe de feu",
+      "original_title": "Harry Potter and the Goblet of Fire",
+      "authorId": "1",
+      "publication_year": 2000,
+      "summary": "Harry Potter participe au Tournoi des Trois Sorciers, une compétition dangereuse entre trois écoles de sorcellerie. Il doit faire face à des épreuves périlleuses et découvrir le retour de Voldemort."
+    },
+    {
+      "id": "5",
+      "title": "Harry Potter et l'Ordre du Phénix",
+      "original_title": "Harry Potter and the Order of the Phoenix",
+      "authorId": "1",
+      "publication_year": 2003,
+      "summary": "Harry Potter entre en cinquième année à Poudlard. Il fait face à la montée du pouvoir de Voldemort et à la résistance de l'Ordre du Phénix. Il découvre également des secrets sur son passé et son lien avec Voldemort."
+    },
+    {
+      "id": "6",
+      "title": "Harry Potter et le Prince de sang-mêlé",
+      "original_title": "Harry Potter and the Half-Blood Prince",
+      "authorId": "1",
+      "publication_year": 2005,
+      "summary": "Harry Potter entre en sixième année à Poudlard. Il découvre le passé de Voldemort et les Horcruxes, des objets contenant des morceaux de son âme. Avec l'aide de Dumbledore, il se prépare à la bataille finale."
+    },
+    {
+      "id": "7",
+      "title": "Harry Potter et les Reliques de la Mort",
+      "original_title": "Harry Potter and the Deathly Hallows",
+      "authorId": "1",
+      "publication_year": 2007,
+      "summary": "Harry Potter, Ron et Hermione partent à la recherche des Horcruxes restants pour vaincre Voldemort. Ils découvrent également les Reliques de la Mort, des objets légendaires qui pourraient les aider dans leur quête."
+    }
+  ],
+  "authors": [
+    {
+      "id": "1",
+      "name": "J.K. Rowling",
+      "birth_year": 1965
+    }
+  ]
+}
