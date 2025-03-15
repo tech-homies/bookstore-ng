@@ -1,5 +1,9 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-
+import { MatIconButton } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
+import { MatListItem, MatNavList } from '@angular/material/list';
+import { MatSidenav, MatSidenavContainer } from '@angular/material/sidenav';
+import { MatToolbar } from '@angular/material/toolbar';
 import { NavComponent } from './nav.component';
 
 describe('NavComponent', () => {
@@ -9,7 +13,7 @@ describe('NavComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [NavComponent],
-      imports: [MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule],
+      imports: [MatToolbar, MatSidenav, MatIcon, MatSidenavContainer, MatNavList, MatListItem, MatIconButton],
     });
   }));
 
