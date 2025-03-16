@@ -1,6 +1,12 @@
-<mat-card appearance="outlined" class="cart-item-card">
-  <mat-card-content class="cart-item-content">
-    <img mat-card-avatar [src]="item().coverImageUrl" alt="Book cover" />
-    {{ item().title }}
-  </mat-card-content>
-</mat-card>
+<div
+  class="inline-flex items-center bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden max-w-fit">
+  <div class="h-16 w-16 flex-shrink-0">
+    <img
+      class="h-full w-full object-cover transition-all duration-300 hover:scale-110 hover:brightness-110"
+      [src]="item().coverImageUrl"
+      alt="Book cover" />
+  </div>
+  <div class="p-4 whitespace-nowrap">
+    <h3 class="text-lg font-medium text-gray-800">{{ item().title }}</h3>
+  </div>
+</div>
