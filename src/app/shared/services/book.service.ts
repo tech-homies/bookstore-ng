@@ -14,11 +14,11 @@ export class BookService {
   #httpClient = inject(HttpClient);
   #authorService = inject(AuthorService);
 
-  getBooks = () => this.#httpClient.get<BookDTO[]>(`${environment.apiUrl}/books`);
+  #getBooks = () => this.#httpClient.get<BookDTO[]>(`${environment.apiUrl}/books`);
 
   getBooksWithAuthors = (): Observable<Book[]> =>
     forkJoin({
-      books: this.getBooks(),
+      books: this.#getBooks(),
       authors: this.#authorService.getAuthors(),
     }).pipe(
       map(({ books, authors }) =>
@@ -26,6 +26,7 @@ export class BookService {
           (book): Book => ({
             ...book,
             author: authors.find((author) => author.id === book.authorId) ?? null,
+            coverImageUrl: `/img/rectangle-${book.id}.jpg`,
           }),
         ),
       ),

@@ -1,6 +1,6 @@
 <mat-card appearance="outlined" class="cart-item-card">
   <mat-card-content class="cart-item-content">
-    <img mat-card-avatar [src]="'/img/rectangle-' + item().id + '.jpg'" alt="Photo of a Shiba Inu" />
+    <img mat-card-avatar [src]="item().coverImageUrl" alt="Book cover" />
     {{ item().title }}
   </mat-card-content>
 </mat-card>
