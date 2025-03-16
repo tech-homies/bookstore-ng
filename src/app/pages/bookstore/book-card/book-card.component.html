@@ -8,11 +8,9 @@
     <p>{{ book().publication_year }} - {{ book().summary }}</p>
   </mat-card-content>
   <mat-card-actions class="card-actions">
-    <button class="button-overrides mat-warn" mat-raised-button type="button" (click)="addToCart()">
-      <mat-icon>add_shopping_cart</mat-icon> Add
-    </button>
+    <button mat-button type="button" (click)="addToCart()"><mat-icon>add_shopping_cart</mat-icon> Add</button>
 
-    <button mat-raised-button type="button" (click)="removeFromCart()">
+    <button mat-button type="button" class="warn" (click)="removeFromCart()">
       <mat-icon>remove_shopping_cart</mat-icon> Remove
     </button>
   </mat-card-actions>
