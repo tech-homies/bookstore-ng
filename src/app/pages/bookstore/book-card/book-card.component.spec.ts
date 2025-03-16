@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { provideExperimentalZonelessChangeDetection } from '@angular/core';
 import { BookCardComponent } from './book-card.component';
 
 describe('BookCardComponent', () => {
@@ -9,9 +10,11 @@ describe('BookCardComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [BookCardComponent],
+      providers: [provideExperimentalZonelessChangeDetection()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(BookCardComponent);
+    fixture.componentRef.setInput('book', {}); // 💡: mock required input()
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

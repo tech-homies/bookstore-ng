@@ -22,7 +22,7 @@
       <span>📚Bookstore (-ng)</span>
       <span class="spacer"></span>
       <a [routerLink]="['/cart']">
-        <mat-icon class="example-icon" [matBadge]="cart().length">shopping_cart</mat-icon>
+        <mat-icon aria-hidden="false" [matBadge]="cart().length">shopping_cart</mat-icon>
       </a>
       <span class="cart-price">
         {{ cartPrice() | currency }}
