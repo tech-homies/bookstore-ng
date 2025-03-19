@@ -14,14 +14,7 @@ export class CartService {
     this.#cart.update((cart) => cart.concat(book));
   }
 
-  // TODO: Idée de sujet -> faire un simple filter dans un 1er temps puis fixer avec IA
   removeFromCart(book: Book) {
-    this.#cart.update((cart) => {
-      const index = cart.findIndex((item) => item.id === book.id);
-      if (index !== -1) {
-        return cart.reduce((acc, item, i) => (i === index ? acc : [...acc, item]), [] as Book[]);
-      }
-      return cart;
-    });
+    this.#cart.update((cart) => cart.filter((b) => b.id !== book.id));
   }
 }
