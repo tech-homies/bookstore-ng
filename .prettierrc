@@ -2,7 +2,20 @@
   "singleQuote": true,
   "bracketSameLine": true,
   "endOfLine": "lf",
-  "plugins": ["prettier-plugin-organize-imports"],
+  "plugins": [
+    "prettier-plugin-css-order",
+    "prettier-plugin-organize-attributes",
+    "prettier-plugin-organize-imports"
+  ],
+  "attributeGroups": [
+    "$DEFAULT",
+    "^data-",
+    "$ANGULAR_INPUT",
+    "$ANGULAR_TWO_WAY_BINDING",
+    "$ANGULAR_OUTPUT",
+    "$ANGULAR_STRUCTURAL_DIRECTIVE"
+  ],
+  "attributeSort": "ASC",
   "overrides": [
     {
       "files": ["*.html", "*.ts"],
