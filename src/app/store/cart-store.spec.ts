@@ -1,16 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 
 import { provideZonelessChangeDetection } from '@angular/core';
-import { CartService } from './cart.service';
+import { CartStore } from './cart-store';
 
-describe('CartService', () => {
-  let service: CartService;
+describe('CartStore', () => {
+  let service: CartStore;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [provideZonelessChangeDetection()],
     });
-    service = TestBed.inject(CartService);
+    service = TestBed.inject(CartStore);
   });
 
   it('should be created', () => {

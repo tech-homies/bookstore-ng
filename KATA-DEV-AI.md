@@ -32,4 +32,4 @@ Il faudrait également que tu logues les groupes de livres et le prix retenu dan
 
 # Instructions - STEP 3 (connect service to app cart)
 
-Utilise ce service dans le service `cart.service.ts` pour calculer le prix du panier.
+Utilise ce service dans le service `cart-store.ts` pour calculer le prix du panier.

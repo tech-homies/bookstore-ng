@@ -5,14 +5,14 @@ import { map } from 'rxjs/operators';
 import { environment } from '../../../environments/environment';
 import { BookDTO } from '../../dtos/book.dto';
 import { Book } from '../../models/book';
-import { AuthorService } from './author.service';
+import { AuthorsApi } from './authors-api';
 
 @Injectable({
   providedIn: 'root',
 })
-export class BookService {
+export class BooksApi {
   #httpClient = inject(HttpClient);
-  #authorService = inject(AuthorService);
+  #authorService = inject(AuthorsApi);
 
   #getBooks = () => this.#httpClient.get<BookDTO[]>(`${environment.apiUrl}/books`);
 

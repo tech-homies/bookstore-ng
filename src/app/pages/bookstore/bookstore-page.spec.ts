@@ -1,24 +1,24 @@
 import { provideZonelessChangeDetection } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
-import { BookService } from '../../shared/services/book.service';
-import BookstoreComponent from './bookstore.component';
+import { BooksApi } from '../../shared/services/books-api';
+import BookstorePage from './bookstore-page';
 
 const mockBookService = {
   getBooksWithAuthors: jest.fn().mockReturnValue(of([])),
 };
 
-describe('BookstoreComponent', () => {
-  let component: BookstoreComponent;
-  let fixture: ComponentFixture<BookstoreComponent>;
+describe('BookstorePage', () => {
+  let component: BookstorePage;
+  let fixture: ComponentFixture<BookstorePage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BookstoreComponent],
-      providers: [provideZonelessChangeDetection(), { provide: BookService, useValue: mockBookService }],
+      imports: [BookstorePage],
+      providers: [provideZonelessChangeDetection(), { provide: BooksApi, useValue: mockBookService }],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(BookstoreComponent);
+    fixture = TestBed.createComponent(BookstorePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

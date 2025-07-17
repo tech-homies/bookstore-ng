@@ -11,7 +11,7 @@ import {
 } from '@angular/material/card';
 import { MatIcon } from '@angular/material/icon';
 import { Book } from '../../../models/book';
-import { CartService } from '../../../store/cart.service';
+import { CartStore } from '../../../store/cart-store';
 
 @Component({
   selector: 'app-book-card',
@@ -26,14 +26,14 @@ import { CartService } from '../../../store/cart.service';
     MatCardAvatar,
     MatIcon,
   ],
-  templateUrl: './book-card.component.html',
-  styleUrl: './book-card.component.scss',
+  templateUrl: './book-card.html',
+  styleUrl: './book-card.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BookCardComponent {
+export class BookCard {
   book = input.required<Book>();
 
-  #cartService = inject(CartService);
+  #cartService = inject(CartStore);
 
   addToCart() {
     this.#cartService.addToCart(this.book());

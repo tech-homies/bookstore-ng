@@ -4,7 +4,7 @@ import { Book } from '../models/book';
 @Injectable({
   providedIn: 'root',
 })
-export class CartService {
+export class CartStore {
   #cart = signal<Book[]>([]);
   cart = this.#cart.asReadonly();
 

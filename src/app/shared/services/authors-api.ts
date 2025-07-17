@@ -8,7 +8,7 @@ import { Author } from '../../models/author';
 @Injectable({
   providedIn: 'root',
 })
-export class AuthorService {
+export class AuthorsApi {
   #httpClient = inject(HttpClient);
 
   getAuthors = (): Observable<Author[]> => this.#httpClient.get<AuthorDTO[]>(`${environment.apiUrl}/authors`);

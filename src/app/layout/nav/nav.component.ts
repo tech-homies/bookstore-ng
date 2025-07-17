@@ -10,7 +10,7 @@ import { MatToolbar } from '@angular/material/toolbar';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import { CartService } from '../../store/cart.service';
+import { CartStore } from '../../store/cart-store';
 
 @Component({
   selector: 'app-nav',
@@ -34,7 +34,7 @@ import { CartService } from '../../store/cart.service';
 })
 export class NavComponent {
   #breakpointObserver = inject(BreakpointObserver);
-  #cartService = inject(CartService);
+  #cartService = inject(CartStore);
 
   cart = this.#cartService.cart;
   cartPrice = this.#cartService.cartPrice;

@@ -1,19 +1,21 @@
-import { provideZonelessChangeDetection } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import CartComponent from './cart.component';
 
-describe('CartComponent', () => {
-  let component: CartComponent;
-  let fixture: ComponentFixture<CartComponent>;
+import { provideZonelessChangeDetection } from '@angular/core';
+import { CartItem } from './cart-item';
+
+describe('CartItem', () => {
+  let component: CartItem;
+  let fixture: ComponentFixture<CartItem>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CartComponent],
+      imports: [CartItem],
       providers: [provideZonelessChangeDetection()],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CartComponent);
+    fixture = TestBed.createComponent(CartItem);
     component = fixture.componentInstance;
+    fixture.componentRef.setInput('item', {}); // 💡: mock required input()
     fixture.detectChanges();
   });
 

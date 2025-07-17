@@ -2,18 +2,18 @@ import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/cor
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { Book } from '../../models/book';
-import { BookService } from '../../shared/services/book.service';
-import { BookCardComponent } from './book-card/book-card.component';
+import { BooksApi } from '../../shared/services/books-api';
+import { BookCard } from './book-card/book-card';
 
 @Component({
   selector: 'app-bookstore',
-  imports: [FormsModule, BookCardComponent],
-  templateUrl: './bookstore.component.html',
-  styleUrl: './bookstore.component.scss',
+  imports: [FormsModule, BookCard],
+  templateUrl: './bookstore-page.html',
+  styleUrl: './bookstore-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush, // TODO: Voir si c'est nécessaire pour les composants sans inputs de type page
 })
-export default class BookstoreComponent {
-  #booksService = inject(BookService);
+export default class BookstorePage {
+  #booksService = inject(BooksApi);
 
   books = signal<Book[]>([]);
 
