@@ -39,22 +39,6 @@
       "authorId": "1",
       "publication_year": 2003,
       "summary": "Harry Potter entre en cinquième année à Poudlard. Il fait face à la montée du pouvoir de Voldemort et à la résistance de l'Ordre du Phénix. Il découvre également des secrets sur son passé et son lien avec Voldemort."
-    },
-    {
-      "id": "6",
-      "title": "Harry Potter et le Prince de sang-mêlé",
-      "original_title": "Harry Potter and the Half-Blood Prince",
-      "authorId": "1",
-      "publication_year": 2005,
-      "summary": "Harry Potter entre en sixième année à Poudlard. Il découvre le passé de Voldemort et les Horcruxes, des objets contenant des morceaux de son âme. Avec l'aide de Dumbledore, il se prépare à la bataille finale."
-    },
-    {
-      "id": "7",
-      "title": "Harry Potter et les Reliques de la Mort",
-      "original_title": "Harry Potter and the Deathly Hallows",
-      "authorId": "1",
-      "publication_year": 2007,
-      "summary": "Harry Potter, Ron et Hermione partent à la recherche des Horcruxes restants pour vaincre Voldemort. Ils découvrent également les Reliques de la Mort, des objets légendaires qui pourraient les aider dans leur quête."
     }
   ],
   "authors": [
